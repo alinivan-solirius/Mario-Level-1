@@ -3,7 +3,7 @@
     (:types
         Entity - object
 
-        Character Structure - Entity
+        Character Structure Pole - Entity
 
         Mario Enemy - Character
 
@@ -11,7 +11,7 @@
 
     )
     (:predicates
-
+        (reachedPole ?m ?p)
     )
 
     (:functions
@@ -114,20 +114,21 @@
         :precondition (and
             (and
                 (not (<
-                        (decrease
-                            (decrease (y_position ?m) (y_dimension ?m))
+                        (-
+                            (- (y_position ?m) (y_dimension ?m))
                             (y_position ?s)
-                            ) 1
+                        ) 
+                        1
                     )
                 )
                 (and
                     (>=
-                        (increase (x_position ?m) (x_dimension ?m))
+                        (+ (x_position ?m) (x_dimension ?m))
                         (x_position ?s)
                     )
                     (<=
                         (x_position ?m)
-                        (increase (x_position ?s) (x_dimension ?s))
+                        (+ (x_position ?s) (x_dimension ?s))
                     )
                 )
             )
@@ -213,6 +214,30 @@
             )
             ; Keep walking forward
             (increase (x_position ?m) 6)
+        )
+    )
+
+    (:action
+        :parameters (?m - Mario ?p - Pole)
+        :precondition (and
+            (>=
+                (+
+                    (x_position ?m)
+                    (x_dimension ?m)
+                )
+                (x_position ?s)
+            )
+            (<=
+                (x_position ?m)
+                (+
+                    (x_position ?s)
+                    (x_dimension ?s)
+                )
+            )
+        
+        )
+        ::effect (and 
+            (reachedPole ?m ?p)
         )
     )
 )
