@@ -92,30 +92,30 @@
     (= (x_position m) 0)
     (= (y_position m) 0)
 
-    (= (x_dimension m) 30)
-    (= (y_dimension m) 40)
-    (= (x_position m) 8505)
-    (= (y_position m) 97)
+    (= (x_dimension p) 30)
+    (= (y_dimension p) 40)
+    (= (x_position p) 8505)
+    (= (y_position p) 97)
 
     (= (x_dimesion bb1) 2953)
     (= (y_dimesion bb1) 60)
     (= (x_position bb1) 0)
-    (= (y_position bb1) c.GROUND_HEIGHT)
+    (= (y_position bb1) 60)
 
     (= (x_dimesion bb2) 635)
     (= (y_dimesion bb2) 60)
     (= (x_position bb2) 3048)
-    (= (y_position bb2) c.GROUND_HEIGHT)
+    (= (y_position bb2) 60)
 
     (= (x_dimesion bb3) 2735)
     (= (y_dimesion bb3) 60)
     (= (x_position bb3) 3819)
-    (= (y_position bb3) c.GROUND_HEIGHT)
+    (= (y_position bb3) 60)
 
     (= (x_dimesion bb4) 2300)
     (= (y_dimesion bb4) 60)
     (= (x_position bb4) 6647)
-    (= (y_position bb4) c.GROUND_HEIGHT)
+    (= (y_position bb4) 60)
 
     (= (x_dimesion bb5) 83)
     (= (y_dimesion bb5) 82)

@@ -1,7 +1,7 @@
-src_colider = '''ground_rect1 = collider.Collider(0, c.GROUND_HEIGHT,    2953, 60)
-ground_rect2 = collider.Collider(3048, c.GROUND_HEIGHT,  635, 60)
-ground_rect3 = collider.Collider(3819, c.GROUND_HEIGHT, 2735, 60)
-ground_rect4 = collider.Collider(6647, c.GROUND_HEIGHT, 2300, 60)
+src_colider = '''ground_rect1 = collider.Collider(0, c.GROUND_HEIGHT,    2953, 60) #
+ground_rect2 = collider.Collider(3048, c.GROUND_HEIGHT,  635, 60) #
+ground_rect3 = collider.Collider(3819, c.GROUND_HEIGHT, 2735, 60) #
+ground_rect4 = collider.Collider(6647, c.GROUND_HEIGHT, 2300, 60) #
 pipe1 = collider.Collider(1202, 452, 83, 82)
 pipe2 = collider.Collider(1631, 409, 83, 140)
 pipe3 = collider.Collider(1973, 366, 83, 170)
